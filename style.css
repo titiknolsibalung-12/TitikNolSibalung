@@ -24,22 +24,14 @@
       justify-content:space-between;
       align-items:center;
       z-index:1000;
+      border-radius: 0 0 10px 10px;
     }
 
     header h1{
       color:#d4a373;
     }
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin-left:20px;
-      transition:0.3s;
-    }
 
-    nav a:hover{
-      color:#d4a373;
-    }
 
     .hero{
       height:100vh;
@@ -50,6 +42,7 @@
       text-align:center;
       padding:20px;
       position:relative;
+      border-radius: 10px;
     }
 
     .hero::before{
@@ -141,9 +134,10 @@
       display: block;
       width: 100%;
       object-fit: cover;
+      border-radius: 10px;
       }
     .foto-menu1 {
-      height: 340px;
+      height: 300px;
     }
     .foto-menu2 {
       height: auto;
@@ -255,6 +249,31 @@
       color:#aaa;
       border-top:1px solid #222;
     }
+    
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-media a {
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      display: inline-flex;
+      width: max-content;
+      height: max-content;
+      padding: 0;
+      margin: 0;
+    }
+    .social-media i {
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .social-media a:hover {
+      transform: scale(1.15);
+    }
 
     @keyframes fadeIn{
       from{
@@ -281,9 +300,6 @@
         gap:10px;
       }
 
-      nav a{
-        margin:0 10px;
-      }
     }
     @media (max-width: 768px) {
 
